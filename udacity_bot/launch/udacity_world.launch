@@ -25,7 +25,7 @@
 output="screen" args="-urdf -param robot_description -model udacity_bot"/>
 
 <!--launch rviz-->
-<node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+<node name="rviz" pkg="rviz" args="-d $(find udacity_bot)/config/rvizConfig.rviz" type="rviz" respawn="false"/>
 
 </launch>
 
